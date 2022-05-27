@@ -1,0 +1,5 @@
+../Core/Src/pcm3168a.c:23:6:pcm3168a_init	24	static
+../Core/Src/pcm3168a.c:57:6:pcm3168a_read	32	static
+../Core/Src/pcm3168a.c:91:6:pcm3168a_write	24	static
+../Core/Src/pcm3168a.c:126:9:pcm3168a_read_reg	24	static
+../Core/Src/pcm3168a.c:139:6:pcm3168a_write_reg	24	static

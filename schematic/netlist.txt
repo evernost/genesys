@@ -1,0 +1,1157 @@
+Netlist
+
+Exported from genesys.sch at 18/02/2020 23:45
+
+EAGLE Version 9.5.1 Copyright (c) 1988-2019 Autodesk, Inc.
+
+Net                 Part     Pad      Pin        Sheet
+
++3V3                B2       1        1          11
+                    B2       2        2          11
+                    B3       1        1          11
+                    B3       2        2          11
+                    B4       1        1          11
+                    B4       2        2          11
+                    B5       1        1          11
+                    B5       2        2          11
+                    B6       1        1          11
+                    B6       2        2          11
+                    B7       1        1          11
+                    B7       2        2          11
+                    B8       1        1          11
+                    B8       2        2          11
+                    C1       1        1          6
+                    C102     1        1          11
+                    C103     1        1          6
+                    C106     1        1          12
+                    C11      1        1          13
+                    C12      1        1          6
+                    C13      1        1          6
+                    C14      1        1          6
+                    C15      1        1          6
+                    C2       1        1          6
+                    C28      1        1          9
+                    C3       1        1          6
+                    C30      1        1          7
+                    C31      1        1          7
+                    C33      1        1          9
+                    C48      1        1          13
+                    C49      1        1          13
+                    C50      1        1          13
+                    C6       1        1          6
+                    C7       1        1          6
+                    C8       1        1          6
+                    C85      1        1          7
+                    C86      1        1          10
+                    C88      1        1          6
+                    C9       1        1          6
+                    IC1      4        VCCIO      5
+                    IC12     8        VCC        7
+                    IC13     16       VCC        9
+                    IC15     24       VDD        11
+                    IC2      16       VCC        9
+                    IC7      10       SCL        10
+                    IC7      16       VCC        10
+                    JP1      1        1          12
+                    JP1      2        2          12
+                    JP11     1        1          9
+                    JP5      2        2          3
+                    L1       2        2          6
+                    P1       3        E          9
+                    P2       3        E          9
+                    P3       3        E          9
+                    P4       3        E          9
+                    P5       3        E          9
+                    P6       3        E          9
+                    P7       PX3      PX3        9
+                    P7       PY3      PY3        9
+                    R2       1        1          6
+                    R3       2        2          5
+                    R31      2        2          6
+                    R38      2        2          8
+                    R4       2        2          5
+                    R69      1        1          7
+                    R70      1        1          14
+                    TP13     TP       TP         3
+                    U$1      108      VDD8       6
+                    U$1      121      VDD9       6
+                    U$1      131      VDD10      6
+                    U$1      144      VDD11      6
+                    U$1      17       VDD1       6
+                    U$1      30       VDD2       6
+                    U$1      39       VDD3       6
+                    U$1      52       VDD4       6
+                    U$1      6        VBAT       6
+                    U$1      62       VDD5       6
+                    U$1      72       VDD6       6
+                    U$1      84       VDD7       6
+                    U$1      95       VDD33USB   6
+                    U$2      1        P_3V3      7
+                    U$2      17       P_3V3      7
+                    U$8      12       VDD        13
+                    U$8      46       VDD        13
+
++5V                 C10      1        1          5
+                    C44      1        1          8
+                    C46      1        1          3
+                    C5       1        1          5
+                    C55      1        1          13
+                    C56      1        1          13
+                    C57      1        1          13
+                    C58      1        1          13
+                    C59      1        1          13
+                    C93      1        1          7
+                    C96      1        1          13
+                    C97      1        1          13
+                    C98      1        1          13
+                    C99      +        +          3
+                    IC1      20       VCC        5
+                    IC9      3        VI         3
+                    J2       P1       VCC        7
+                    JP3      2        2          2
+                    L2       1        1          7
+                    OK1      7        VE         8
+                    OK1      8        VCC        8
+                    R39      2        2          8
+                    TP12     TP       TP         2
+                    U$8      14       VCCDA      13
+                    U$8      3        VCCAD      13
+                    U$8      34       VCCDA      13
+                    U$8      49       VCCAD      13
+
++10V                C47      1        1          15
+                    C71      1        1          15
+                    C83      1        1          16
+                    IC4      8        V+         15
+                    IC5      8        V+         15
+                    IC6      8        V+         16
+                    JP7      2        2          4
+                    TP14     TP       TP         4
+
++12V                C41      1        1          1
+                    JP2      1        1          2
+                    JP6      1        1          4
+                    JP8      1        1          4
+                    R11      2        2          1
+                    S1       P2       P2         1
+
+-10V                C70      2        2          15
+                    C72      2        2          15
+                    C84      2        2          16
+                    IC4      4        V-         15
+                    IC5      4        V-         15
+                    IC6      4        V-         16
+                    JP10     2        2          4
+                    TP16     TP       TP         4
+
+-12V                C26      2        2          4
+                    C29      -        -          4
+                    IC10     1        VO         4
+                    JP9      1        1          4
+                    R7       1        1          4
+                    TP15     TP       TP         4
+
+ANALOG_INPUTS_1     IC2      3        X          9
+                    U$1      28       PC2_C      7
+
+ANALOG_INPUTS_2     IC13     3        X          9
+                    U$1      29       PC3_C      7
+
+AUDIO_I2S_BCLK_ADC  R74      1        1          7
+                    U$8      7        BCKAD      14
+
+AUDIO_I2S_BCLK_DAC  R73      1        1          7
+                    U$8      36       BCKDA      14
+
+AUDIO_I2S_LRCLK_ADC R84      1        1          7
+                    U$8      6        LRCKAD     14
+
+AUDIO_I2S_LRCLK_DAC R85      1        1          7
+                    U$8      35       LRCKDA     14
+
+AUDIO_I2S_MCLK      R72      1        1          7
+                    U$8      41       SCKI       14
+
+AUDIO_I2S_SD_ADC    U$1      2        PE3        7
+                    U$8      8        DOUT1      14
+
+AUDIO_I2S_SD_DAC    U$1      27       PC1        7
+                    U$8      37       DIN1       14
+
+AUDIO_RST           U$1      123      PD7        7
+                    U$8      4        RST        14
+
+AUDIO_SPI_MCLK      U$1      126      PG11       7
+                    U$8      42       MC/SCL/FMT 14
+
+AUDIO_SPI_MISO      U$1      124      PG9        7
+                    U$8      44       MDO/ADR1/MD1 14
+
+AUDIO_SPI_MOSI      U$1      43       PA7        7
+                    U$8      43       MDI/SDA/DEMP 14
+
+AUDIO_SPI_MS        U$1      125      PG10       7
+                    U$8      45       MS/ADR0/MD0 14
+
+B2                  U$1      99       PC9        7
+                    U$2      31       B2         7
+
+B3                  U$1      79       PD10       7
+                    U$2      26       B3         7
+
+B4                  U$1      102      PA10       7
+                    U$2      24       B4         7
+
+B5                  U$1      37       PA3        7
+                    U$2      21       B5         7
+
+B6                  U$1      139      PB8        7
+                    U$2      19       B6         7
+
+B7                  U$1      140      PB9        7
+                    U$2      23       B7         7
+
+BUZZER              R71      2        2          7
+                    U$1      36       PA2        7
+
+DBG_!RST            B1       3        3          6
+                    B1       4        4          6
+                    C16      1        1          6
+                    R30      1        1          12
+                    R31      1        1          6
+                    U$1      25       !NRST      6
+
+DBG_JTAG_!TRST      R15      1        1          12
+                    U$1      134      PB4        7
+
+DBG_JTAG_TCK        R18      1        1          12
+                    U$1      109      PA14       7
+
+DBG_JTAG_TDI        R16      1        1          12
+                    U$1      110      PA15       7
+
+DBG_JTAG_TDO        R19      1        1          12
+                    U$1      133      PB3        7
+
+DBG_JTAG_TMS        R17      1        1          12
+                    U$1      105      PA13       7
+
+DISPLAY_EN          U$1      22       PF10       7
+                    U$2      28       DISPLAY_EN 7
+
+G2                  U$1      42       PA6        7
+                    U$2      8        G2         7
+
+G3                  U$1      64       PE11       7
+                    U$2      10       G3         7
+
+G4                  U$1      69       PB10       7
+                    U$2      36       G4         7
+
+G5                  U$1      70       PB11       7
+                    U$2      11       G5         7
+
+G6                  U$1      97       PC7        7
+                    U$2      12       G6         7
+
+G7                  U$1      93       PG8        7
+                    U$2      35       G7         7
+
+GND                 B1       1        1          6
+                    B1       2        2          6
+                    C1       2        2          6
+                    C10      2        2          5
+                    C100     -        -          2
+                    C101     2        2          3
+                    C102     2        2          11
+                    C103     2        2          6
+                    C104     2        2          5
+                    C105     2        2          7
+                    C106     2        2          12
+                    C11      2        2          13
+                    C12      2        2          6
+                    C13      2        2          6
+                    C14      2        2          6
+                    C15      2        2          6
+                    C16      2        2          6
+                    C17      2        2          6
+                    C18      2        2          6
+                    C19      2        2          7
+                    C2       2        2          6
+                    C20      2        2          7
+                    C21      2        2          7
+                    C22      2        2          7
+                    C23      -        -          4
+                    C24      2        2          11
+                    C25      2        2          4
+                    C26      1        1          4
+                    C28      2        2          9
+                    C29      +        +          4
+                    C3       2        2          6
+                    C30      2        2          7
+                    C31      2        2          7
+                    C32      2        2          4
+                    C33      2        2          9
+                    C34      1        1          4
+                    C35      2        2          11
+                    C36      2        2          11
+                    C37      2        2          11
+                    C38      2        2          11
+                    C39      2        2          11
+                    C4       2        2          5
+                    C40      1        1          4
+                    C41      2        2          1
+                    C42      2        2          4
+                    C43      -        -          4
+                    C44      2        2          8
+                    C45      -        -          3
+                    C46      2        2          3
+                    C47      2        2          15
+                    C48      2        2          13
+                    C49      2        2          13
+                    C5       2        2          5
+                    C50      2        2          13
+                    C51      2        2          13
+                    C52      2        2          13
+                    C53      2        2          13
+                    C54      2        2          13
+                    C55      2        2          13
+                    C56      2        2          13
+                    C57      2        2          13
+                    C58      2        2          13
+                    C59      2        2          13
+                    C6       2        2          6
+                    C62      1        1          15
+                    C66      1        1          15
+                    C7       2        2          6
+                    C70      1        1          15
+                    C71      2        2          15
+                    C72      1        1          15
+                    C76      1        1          16
+                    C8       2        2          6
+                    C81      1        1          16
+                    C83      2        2          16
+                    C84      1        1          16
+                    C85      2        2          7
+                    C86      2        2          10
+                    C87      2        2          4
+                    C88      2        2          6
+                    C89      2        2          6
+                    C9       2        2          6
+                    C90      2        2          6
+                    C91      2        2          6
+                    C92      2        2          6
+                    C93      2        2          7
+                    C94      2        2          11
+                    C95      2        2          2
+                    C96      2        2          13
+                    C97      2        2          13
+                    C98      2        2          13
+                    C99      -        -          3
+                    D1       3        P3         5
+                    D2       3        P3         7
+                    IC1      18       GND        5
+                    IC1      21       GND        5
+                    IC1      25       GND        5
+                    IC1      26       TEST       5
+                    IC1      7        GND        5
+                    IC10     5        GND        4
+                    IC11     2        GND        4
+                    IC12     4        GND        7
+                    IC13     2        X6         9
+                    IC13     4        X7         9
+                    IC13     6        INH        9
+                    IC13     7        VEE        9
+                    IC13     8        GND        9
+                    IC15     12       VSS        11
+                    IC15     13       D          11
+                    IC15     15       INH        11
+                    IC15     16       X15        11
+                    IC15     17       X14        11
+                    IC15     18       X13        11
+                    IC15     19       X12        11
+                    IC15     2        X7         11
+                    IC15     20       X11        11
+                    IC15     21       X10        11
+                    IC15     22       X9         11
+                    IC15     23       X8         11
+                    IC2      2        X6         9
+                    IC2      4        X7         9
+                    IC2      6        INH        9
+                    IC2      7        VEE        9
+                    IC2      8        GND        9
+                    IC3      3        GND        4
+                    IC3      6        GND        4
+                    IC7      13       G          10
+                    IC7      8        GND        10
+                    IC8      1        GND        2
+                    IC8      7        GND        2
+                    IC9      1        GND        3
+                    J1       GND      5          5
+                    J2       P4       GND        7
+                    J3       P4       P4         15
+                    J4       P4       P4         16
+                    J6       GND@1    SHIELD     8
+                    J6       GND@2    SHIELD     8
+                    J7       P2       P2         1
+                    J7       P3       P3         1
+                    JP1      10       10         12
+                    JP1      12       12         12
+                    JP1      14       14         12
+                    JP1      16       16         12
+                    JP1      18       18         12
+                    JP1      20       20         12
+                    JP1      4        4          12
+                    JP1      6        6          12
+                    JP1      8        8          12
+                    JP11     6        6          9
+                    LED10    C        C          10
+                    LED11    C        C          1
+                    LED12    C        C          7
+                    LED13    C        C          7
+                    LED3     C        C          10
+                    LED4     C        C          10
+                    LED5     C        C          10
+                    LED6     C        C          10
+                    LED7     C        C          10
+                    LED8     C        C          10
+                    LED9     C        C          10
+                    OK1      5        GND        8
+                    P1       1        A          9
+                    P2       1        A          9
+                    P3       1        A          9
+                    P4       1        A          9
+                    P5       1        A          9
+                    P6       1        A          9
+                    P7       PX1      PX1        9
+                    P7       PY1      PY1        9
+                    P7       SHIELD@1 SHIELD     9
+                    P7       SHIELD@2 SHIELD     9
+                    P7       SHIELD@3 SHIELD     9
+                    P7       SHIELD@4 SHIELD     9
+                    Q2       2        E          8
+                    Q4       2        E          7
+                    R1       1        1          6
+                    R10      2        2          4
+                    R12      2        2          11
+                    R13      2        2          11
+                    R20      2        2          11
+                    R22      2        2          11
+                    R24      2        2          11
+                    R26      2        2          11
+                    R28      2        2          11
+                    R34      1        1          5
+                    R36      1        1          4
+                    R41      2        2          3
+                    R43      2        2          7
+                    R59      2        2          16
+                    R6       1        1          5
+                    R66      2        2          16
+                    R9       2        2          2
+                    S1       SHIELD@1 SHIELD     1
+                    S1       SHIELD@2 SHIELD     1
+                    S1       SHIELD@3 SHIELD     1
+                    S1       SHIELD@4 SHIELD     1
+                    U$1      107      GND7       6
+                    U$1      120      GND8       6
+                    U$1      130      GND9       6
+                    U$1      16       GND1       6
+                    U$1      31       GNDA       6
+                    U$1      38       GND2       6
+                    U$1      51       GND3       6
+                    U$1      61       GND4       6
+                    U$1      83       GND5       6
+                    U$1      94       GND6       6
+                    U$2      14       GND3       7
+                    U$2      20       GND4       7
+                    U$2      25       GND5       7
+                    U$2      29       B1         7
+                    U$2      30       GND6       7
+                    U$2      32       G0         7
+                    U$2      33       G1         7
+                    U$2      34       GND7       7
+                    U$2      38       R0         7
+                    U$2      39       GND8       7
+                    U$2      40       R1         7
+                    U$2      6        GND1       7
+                    U$2      7        B0         7
+                    U$2      9        GND2       7
+                    U$8      11       DGND       13
+                    U$8      16       AGNDDA     13
+                    U$8      2        AGNDAD     13
+                    U$8      33       AGNDDA     13
+                    U$8      38       DIN2       14
+                    U$8      39       DIN3       14
+                    U$8      40       DIN4       14
+                    U$8      47       DGND       13
+                    U$8      50       AGNDAD     13
+                    U$8      GND      GND_PAD    13
+
+H_SYNC              U$1      96       PC6        7
+                    U$2      5        H_SYNC     7
+
+LED_REG_UPD         IC7      12       RCK        10
+                    U$1      66       PE13       7
+
+LED_SPI_CLK         IC7      11       SCK        10
+                    U$1      65       PE12       7
+
+LED_SPI_MOSI        IC7      14       SER        10
+                    U$1      5        PE6        7
+
+MIDI_IN             OK1      6        VO         8
+                    R38      1        1          8
+                    TP10     TP       TP         8
+                    U$1      73       PB12       7
+
+MIDI_OUT            R40      2        2          8
+                    TP11     TP       TP         8
+                    U$1      74       PB13       7
+
+MUX_SEL_A           IC13     11       A          9
+                    IC15     10       A          11
+                    IC2      11       A          9
+                    U$1      80       PD11       7
+
+MUX_SEL_B           IC13     10       B          9
+                    IC15     11       B          11
+                    IC2      10       B          9
+                    U$1      81       PD12       7
+
+MUX_SEL_C           IC13     9        C          9
+                    IC15     14       C          11
+                    IC2      9        C          9
+                    U$1      82       PD13       7
+
+N$1                 C4       1        1          5
+                    IC1      17       3V3OUT     5
+                    TP5      TP       TP         5
+
+N$2                 R1       2        2          6
+                    U$1      138      BOOT0      6
+
+N$3                 C89      1        1          6
+                    C90      1        1          6
+                    C91      1        1          6
+                    C92      1        1          6
+                    L1       1        1          6
+                    U$1      32       VREF+      6
+                    U$1      33       VDDA       6
+
+N$4                 C95      1        1          2
+                    IC8      2        VI         2
+                    JP2      2        2          2
+
+N$5                 IC1      23       CBUS0      5
+                    LED1     C        C          5
+
+N$6                 IC1      22       CBUS1      5
+                    LED2     C        C          5
+
+N$7                 LED1     A        A          5
+                    R3       1        1          5
+
+N$8                 LED2     A        A          5
+                    R4       1        1          5
+
+N$9                 D1       2        P2         5
+                    IC1      16       USBDM      5
+                    J1       DN       2          5
+
+N$10                J1       VBUS     1          5
+                    R5       2        2          5
+
+N$11                IC1      19       !RESET     5
+                    R5       1        1          5
+                    R6       2        2          5
+
+N$12                D1       1        P1         5
+                    IC1      15       USBDP      5
+                    J1       DP       3          5
+
+N$13                R2       2        2          6
+                    U$1      143      PDR_ON     6
+
+N$14                C17      1        1          6
+                    C18      1        1          6
+                    U$1      106      VCAP2      6
+                    U$1      71       VCAP1      6
+
+N$15                R8       1        1          7
+                    U$2      27       PIXEL_CLK  7
+
+N$16                C100     +        +          2
+                    IC8      5        SENSE      2
+                    IC8      6        VO         2
+                    JP3      1        1          2
+
+N$17                C21      1        1          7
+                    Q1       1        1          7
+                    U$1      24       PH1-OSC_OUT 7
+
+N$18                C22      1        1          7
+                    Q1       2        2          7
+                    U$1      23       PH0-OSC_IN 7
+
+N$19                IC2      12       X3         9
+                    P4       2        S          9
+
+N$20                IC2      15       X2         9
+                    P3       2        S          9
+
+N$21                IC2      14       X1         9
+                    P2       2        S          9
+
+N$22                IC2      13       X0         9
+                    P1       2        S          9
+
+N$23                JP1      3        3          12
+                    R15      2        2          12
+
+N$24                IC2      1        X4         9
+                    P5       2        S          9
+
+N$25                C35      1        1          11
+                    IC15     6        X3         11
+                    R21      1        1          11
+
+N$26                C19      1        1          7
+                    C20      1        1          7
+                    L2       2        2          7
+                    U$2      2        P_5V       7
+                    U$2      4        P_5V       7
+
+N$27                JP1      5        5          12
+                    R16      2        2          12
+
+N$28                JP1      7        7          12
+                    R17      2        2          12
+
+N$29                B3       3        3          11
+                    B3       4        4          11
+                    R20      1        1          11
+                    R21      2        2          11
+
+N$30                JP1      9        9          12
+                    R18      2        2          12
+
+N$31                B5       3        3          11
+                    B5       4        4          11
+                    R22      1        1          11
+                    R23      2        2          11
+
+N$32                JP1      13       13         12
+                    R19      2        2          12
+
+N$33                B6       3        3          11
+                    B6       4        4          11
+                    R24      1        1          11
+                    R25      2        2          11
+
+N$34                JP1      15       15         12
+                    R30      2        2          12
+
+N$35                B7       3        3          11
+                    B7       4        4          11
+                    R26      1        1          11
+                    R27      2        2          11
+
+N$36                IC3      5        SENSE      4
+                    R35      1        1          4
+                    R36      2        2          4
+
+N$37                B8       3        3          11
+                    B8       4        4          11
+                    R28      1        1          11
+                    R29      2        2          11
+
+N$38                C78      1        1          16
+                    U$8      30       VOUT2-     16
+
+N$39                J6       P4       4          8
+                    R39      1        1          8
+
+N$40                C51      1        1          13
+                    U$8      60       VREFAD     13
+
+N$41                C52      1        1          13
+                    U$8      59       VREFAD     13
+
+N$42                C53      1        1          13
+                    U$8      15       VCOMDA     13
+
+N$43                B4       3        3          11
+                    B4       4        4          11
+                    R12      1        1          11
+                    R32      2        2          11
+
+N$44                OK1      2        A          8
+                    R37      2        2          8
+
+N$45                J5       P5       5          8
+                    OK1      3        C          8
+
+N$46                B2       3        3          11
+                    B2       4        4          11
+                    R13      1        1          11
+                    R14      2        2          11
+
+N$47                J5       P4       4          8
+                    R37      1        1          8
+
+N$48                J6       P5       5          8
+                    Q2       3        C          8
+
+N$49                Q2       1        B          8
+                    R40      1        1          8
+
+N$50                C75      1        1          16
+                    R56      1        1          16
+                    R58      2        2          16
+                    R59      1        1          16
+
+N$51                IC9      5        VO_ADJ     3
+                    R41      1        1          3
+
+N$52                C60      1        1          15
+                    IC4      6        -IN        15
+                    R42      2        2          15
+                    R53      1        1          15
+
+N$53                C60      2        2          15
+                    IC4      7        OUT        15
+                    R44      2        2          15
+
+N$54                C63      1        1          15
+                    R42      1        1          15
+                    R44      1        1          15
+                    R45      2        2          15
+                    U$8      51       VIN1-      15
+
+N$55                C61      1        1          15
+                    IC4      2        -IN        15
+                    R45      1        1          15
+                    R46      2        2          15
+
+N$56                C61      2        2          15
+                    IC4      1        OUT        15
+                    R47      2        2          15
+
+N$57                C64      1        1          15
+                    IC5      6        -IN        15
+                    R48      2        2          15
+                    R54      1        1          15
+
+N$58                IC1      13       CBUS2      5
+                    TP6      TP       TP         5
+
+N$59                C64      2        2          15
+                    IC5      7        OUT        15
+                    R49      2        2          15
+
+N$60                C67      1        1          15
+                    R48      1        1          15
+                    R49      1        1          15
+                    R50      2        2          15
+                    U$8      53       VIN2-      15
+
+N$61                C65      1        1          15
+                    IC5      2        -IN        15
+                    R50      1        1          15
+                    R51      2        2          15
+
+N$62                C65      2        2          15
+                    IC5      1        OUT        15
+                    R52      2        2          15
+
+N$63                IC13     14       X1         9
+                    P7       PX2      PX2        9
+
+N$64                C69      2        2          15
+                    R54      2        2          15
+
+N$65                C67      2        2          15
+                    R51      1        1          15
+                    R52      1        1          15
+                    U$8      54       VIN2+      15
+
+N$66                C68      2        2          15
+                    R53      2        2          15
+
+N$67                C63      2        2          15
+                    R46      1        1          15
+                    R47      1        1          15
+                    U$8      52       VIN1+      15
+
+N$68                C68      1        1          15
+                    J3       P5       P5         15
+
+N$69                C69      1        1          15
+                    J3       P6       P6         15
+
+N$70                C75      2        2          16
+                    R55      1        1          16
+                    R57      2        2          16
+                    R60      2        2          16
+
+N$71                C73      2        2          16
+                    R55      2        2          16
+
+N$72                C74      2        2          16
+                    R56      2        2          16
+
+N$73                C77      2        2          16
+                    IC6      2        -IN        16
+                    R57      1        1          16
+
+N$74                C76      2        2          16
+                    IC6      3        +IN        16
+                    R58      1        1          16
+
+N$75                C77      1        1          16
+                    IC6      1        OUT        16
+                    R60      1        1          16
+                    R61      2        2          16
+
+N$76                J4       P5       P5         16
+                    R61      1        1          16
+
+N$77                C74      1        1          16
+                    U$8      31       VOUT1+     16
+
+N$78                C73      1        1          16
+                    U$8      32       VOUT1-     16
+
+N$79                C80      1        1          16
+                    R63      1        1          16
+                    R65      2        2          16
+                    R66      1        1          16
+
+N$80                C80      2        2          16
+                    R62      1        1          16
+                    R64      2        2          16
+                    R67      2        2          16
+
+N$81                C78      2        2          16
+                    R62      2        2          16
+
+N$82                C79      2        2          16
+                    R63      2        2          16
+
+N$83                C82      2        2          16
+                    IC6      6        -IN        16
+                    R64      1        1          16
+
+N$84                C81      2        2          16
+                    IC6      5        +IN        16
+                    R65      1        1          16
+
+N$85                C82      1        1          16
+                    IC6      7        OUT        16
+                    R67      1        1          16
+                    R68      2        2          16
+
+N$86                J4       P6       P6         16
+                    R68      1        1          16
+
+N$87                C79      1        1          16
+                    U$8      29       VOUT2+     16
+
+N$88                IC1      14       CBUS3      5
+                    TP7      TP       TP         5
+
+N$89                IC2      5        X5         9
+                    P6       2        S          9
+
+N$90                R70      2        2          14
+                    U$8      48       MODE       14
+
+N$91                IC8      3        !INHIBIT   2
+                    TP8      TP       TP         2
+
+N$92                IC9      4        !INHIBIT   3
+                    TP9      TP       TP         3
+
+N$93                C104     1        1          5
+                    J1       SHIELD@1 S1         5
+                    J1       SHIELD@2 S2         5
+                    J1       SHIELD@3 S3         5
+                    J1       SHIELD@4 S4         5
+                    R34      2        2          5
+
+N$94                LED3     A        A          10
+                    R76      1        1          10
+
+N$95                LED4     A        A          10
+                    R77      1        1          10
+
+N$96                IC7      1        QB         10
+                    R77      2        2          10
+
+N$97                IC7      15       QA         10
+                    R76      2        2          10
+
+N$98                LED5     A        A          10
+                    R78      1        1          10
+
+N$99                LED6     A        A          10
+                    R79      1        1          10
+
+N$100               IC7      3        QD         10
+                    R79      2        2          10
+
+N$101               IC7      2        QC         10
+                    R78      2        2          10
+
+N$102               LED7     A        A          10
+                    R80      1        1          10
+
+N$103               LED8     A        A          10
+                    R81      1        1          10
+
+N$104               IC7      5        QF         10
+                    R81      2        2          10
+
+N$105               IC7      4        QE         10
+                    R80      2        2          10
+
+N$106               LED9     A        A          10
+                    R82      1        1          10
+
+N$107               LED10    A        A          10
+                    R83      1        1          10
+
+N$108               IC7      7        QH         10
+                    R83      2        2          10
+
+N$109               IC7      6        QG         10
+                    R82      2        2          10
+
+N$110               IC13     15       X2         9
+                    JP11     5        5          9
+
+N$111               IC13     12       X3         9
+                    JP11     4        4          9
+
+N$112               R88      2        2          7
+                    U$1      10       PF0        7
+
+N$113               R89      2        2          7
+                    U$1      11       PF1        7
+
+N$114               LED12    A        A          7
+                    R89      1        1          7
+
+N$115               LED13    A        A          7
+                    R88      1        1          7
+
+N$116               IC8      4        ADJUST     2
+                    R9       1        1          2
+
+N$117               IC10     4        VO_ADJ     4
+                    R7       2        2          4
+
+N$118               C27      1        1          4
+                    IC11     4        ADJ        4
+                    R10      1        1          4
+                    R33      2        2          4
+
+N$119               C42      1        1          4
+                    IC3      1        !SHDN      4
+                    IC3      2        IN         4
+                    JP6      2        2          4
+
+N$120               C101     1        1          3
+                    C45      +        +          3
+                    IC9      6        VO         3
+                    JP5      1        1          3
+
+N$121               C43      +        +          4
+                    IC3      4        OUT        4
+                    JP7      1        1          4
+                    R35      2        2          4
+
+N$122               C34      2        2          4
+                    IC11     1        !SHDN      4
+                    IC11     3        VI         4
+                    IC11     6        VI         4
+                    JP9      2        2          4
+
+N$123               C23      +        +          4
+                    C25      1        1          4
+                    C32      1        1          4
+                    C87      1        1          4
+                    IC10     2        VI         4
+                    JP8      2        2          4
+
+N$124               C27      2        2          4
+                    C40      2        2          4
+                    IC11     5        VO         4
+                    JP10     1        1          4
+                    R33      1        1          4
+
+N$125               J7       P1       P1         1
+                    S1       P1       P1         1
+
+N$126               LED11    A        A          1
+                    R11      1        1          1
+
+N$127               IC13     13       X0         9
+                    P7       PY2      PY2        9
+
+N$128               IC13     1        X4         9
+                    JP11     3        3          9
+
+N$129               IC13     5        X5         9
+                    JP11     2        2          9
+
+N$130               C105     1        1          7
+                    J2       SHIELD@1 S1         7
+                    J2       SHIELD@2 S2         7
+                    R43      1        1          7
+
+N$131               JP4      1        1          7
+                    R69      2        2          7
+
+N$132               JP4      2        2          7
+                    Q4       3        C          7
+
+N$133               R72      2        2          7
+                    U$1      1        PE2        7
+
+N$134               Q4       1        B          7
+                    R71      1        1          7
+
+N$135               R73      2        2          7
+                    U$1      4        PE5        7
+
+N$136               R74      2        2          7
+                    U$1      20       PF8        7
+
+N$137               R75      2        2          7
+                    U$1      48       PB2        7
+
+N$138               TP17     TP       TP         7
+                    U$1      56       PG0        7
+
+N$139               R84      2        2          7
+                    U$1      21       PF9        7
+
+N$140               R85      2        2          7
+                    U$1      3        PE4        7
+
+PB_2                C36      1        1          11
+                    IC15     7        X2         11
+                    R23      1        1          11
+
+PB_3                C37      1        1          11
+                    IC15     4        X5         11
+                    R25      1        1          11
+
+PB_4                C38      1        1          11
+                    IC15     3        X6         11
+                    R27      1        1          11
+
+PB_5                C39      1        1          11
+                    IC15     5        X4         11
+                    R29      1        1          11
+
+PB_6                C24      1        1          11
+                    IC15     8        X1         11
+                    R14      1        1          11
+
+PB_7                C94      1        1          11
+                    IC15     9        X0         11
+                    R32      1        1          11
+
+PB_ARRAY            IC15     1        X          11
+                    U$1      44       PC4        7
+
+PIXEL_CLK           R8       2        2          7
+                    U$1      67       PE14       7
+
+QSPI_!CS            IC12     1        !CS        7
+                    U$1      112      PC11       7
+
+QSPI_CLK            IC12     6        CLK        7
+                    R75      1        1          7
+
+QSPI_IO0            IC12     5        SI/IO0     7
+                    U$1      58       PE7        7
+
+QSPI_IO1            IC12     2        SO/IO1     7
+                    U$1      59       PE8        7
+
+QSPI_IO2            IC12     3        !WP!/IO2   7
+                    U$1      60       PE9        7
+
+QSPI_IO3            IC12     7        !HOLD!/!RESET!/IO3 7
+                    U$1      63       PE10       7
+
+R2                  U$1      111      PC10       7
+                    U$2      15       R2         7
+
+R3                  U$1      46       PB0        7
+                    U$2      16       R3         7
+
+R4                  U$1      41       PA5        7
+                    U$2      18       R4         7
+
+R5                  U$1      26       PC0        7
+                    U$2      22       R5         7
+
+R6                  U$1      47       PB1        7
+                    U$2      37       R6         7
+
+R7                  U$1      68       PE15       7
+                    U$2      13       R7         7
+
+SHIELD              J5       GND@1    SHIELD     8
+                    J5       GND@2    SHIELD     8
+
+TRACK               IC9      2        TRACK      3
+
+UART_!CTS           IC1      3        !RTS       5
+                    TP3      TP       TP         5
+                    U$1      76       PB15       7
+
+UART_!RTS           IC1      11       !CTS       5
+                    TP4      TP       TP         5
+                    U$1      75       PB14       7
+
+UART_RX             IC1      1        TXD        5
+                    TP1      TP       TP         5
+                    U$1      35       PA1        7
+
+UART_TX             IC1      5        RXD        5
+                    TP2      TP       TP         5
+                    U$1      34       PA0        7
+
+USB_OTG_D_N         D2       1        P1         7
+                    J2       P2       D-         7
+                    U$1      103      PA11       7
+
+USB_OTG_D_P         D2       2        P2         7
+                    J2       P3       D+         7
+                    U$1      104      PA12       7
+
+VCOMAD              C54      1        1          13
+                    C62      2        2          15
+                    C66      2        2          15
+                    IC4      3        +IN        15
+                    IC4      5        +IN        15
+                    IC5      3        +IN        15
+                    IC5      5        +IN        15
+                    U$8      1        VCOMAD     13
+                    U$8      55       VIN3-      15
+                    U$8      56       VIN3+      15
+                    U$8      57       VIN4-      15
+                    U$8      58       VIN4+      15
+                    U$8      61       VIN5-      15
+                    U$8      62       VIN5+      15
+                    U$8      63       VIN6-      15
+                    U$8      64       VIN6+      15
+
+V_SYNC              U$1      40       PA4        7
+                    U$2      3        V_SYNC     7
+

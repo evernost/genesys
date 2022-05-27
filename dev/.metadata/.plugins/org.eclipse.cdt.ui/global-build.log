@@ -1,0 +1,391 @@
+18:03:43 **** Incremental Build of configuration Debug for project genesys_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/tim.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/tim.d" -MT"Core/Src/tim.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/tim.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:184:5: warning: implicit declaration of function 'console'; did you mean 'coshl'? [-Wimplicit-function-declaration]
+  184 |     console("ADC calibration failed\r\n");
+      |     ^~~~~~~
+      |     coshl
+../Core/Src/main.c:237:38: warning: format '%X' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  237 |       sprintf(msg, "ADC value = 0x%08X\r\n", adc_val);
+      |                                   ~~~^       ~~~~~~~
+      |                                      |       |
+      |                                      |       uint32_t {aka long unsigned int}
+      |                                      unsigned int
+      |                                   %08lX
+../Core/Src/main.c:364:14: warning: unused variable 'tmp' [-Wunused-variable]
+  364 |         char tmp[64];
+      |              ^~~
+../Core/Src/main.c:363:17: warning: unused variable 'real_att' [-Wunused-variable]
+  363 |         uint8_t real_att;
+      |                 ^~~~~~~~
+../Core/Src/main.c:150:42: warning: unused variable 'osc_4' [-Wunused-variable]
+  150 |   oscillator osc_0, osc_1, osc_2, osc_3, osc_4;
+      |                                          ^~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:611:6: warning: conflicting types for 'console'
+  611 | void console(const char *msg)
+      |      ^~~~~~~
+../Core/Src/main.c:184:5: note: previous implicit declaration of 'console' was here
+  184 |     console("ADC calibration failed\r\n");
+      |     ^~~~~~~
+arm-none-eabi-gcc -o "genesys_core.elf" @"objects.list"   -mcpu=cortex-m7 -T"D:\recherche\projets\projet_genesys\dev\genesys_core\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="genesys_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: genesys_core.elf
+ 
+arm-none-eabi-size   genesys_core.elf 
+arm-none-eabi-objdump -h -S  genesys_core.elf  > "genesys_core.list"
+   text	   data	    bss	    dec	    hex	filename
+  74836	   1148	   4956	  80940	  13c2c	genesys_core.elf
+Finished building: default.size.stdout
+ 
+Finished building: genesys_core.list
+ 
+18:04:52 **** Incremental Build of configuration Debug for project genesys_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/adc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/adc.d" -MT"Core/Src/adc.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/adc.o"
+arm-none-eabi-gcc "../Core/Src/dma.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/dma.d" -MT"Core/Src/dma.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/dma.o"
+arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/gpio.o"
+arm-none-eabi-gcc "../Core/Src/ltdc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ltdc.d" -MT"Core/Src/ltdc.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ltdc.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/pcm3168a.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/pcm3168a.d" -MT"Core/Src/pcm3168a.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/pcm3168a.o"
+arm-none-eabi-gcc "../Core/Src/quadspi.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/quadspi.d" -MT"Core/Src/quadspi.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/quadspi.o"
+arm-none-eabi-gcc "../Core/Src/sai.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sai.d" -MT"Core/Src/sai.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sai.o"
+arm-none-eabi-gcc "../Core/Src/spi.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/spi.d" -MT"Core/Src/spi.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/spi.o"
+arm-none-eabi-gcc "../Core/Src/stm32h7xx_hal_msp.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32h7xx_hal_msp.d" -MT"Core/Src/stm32h7xx_hal_msp.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32h7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32h7xx_it.d" -MT"Core/Src/stm32h7xx_it.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_it.o"
+arm-none-eabi-gcc "../Core/Src/tim.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/tim.d" -MT"Core/Src/tim.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/tim.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:184:13: warning: passing argument 1 of 'console' makes integer from pointer without a cast [-Wint-conversion]
+  184 |     console("ADC calibration failed\r\n");
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |             |
+      |             char *
+In file included from ../Core/Src/main.c:17:
+../Core/Inc/main.h:55:14: note: expected 'char' but argument is of type 'char *'
+   55 | void console(const char);
+      |              ^~~~~~~~~~
+../Core/Src/main.c:188:13: warning: passing argument 1 of 'console' makes integer from pointer without a cast [-Wint-conversion]
+  188 |     console("ADC calibration OK\r\n");
+      |             ^~~~~~~~~~~~~~~~~~~~~~~~
+      |             |
+      |             char *
+In file included from ../Core/Src/main.c:17:
+../Core/Inc/main.h:55:14: note: expected 'char' but argument is of type 'char *'
+   55 | void console(const char);
+      |              ^~~~~~~~~~
+../Core/Src/main.c:196:11: warning: passing argument 1 of 'console' makes integer from pointer without a cast [-Wint-conversion]
+  196 |   console("Init done!\r\n");
+      |           ^~~~~~~~~~~~~~~~
+      |           |
+      |           char *
+In file included from ../Core/Src/main.c:17:
+../Core/Inc/main.h:55:14: note: expected 'char' but argument is of type 'char *'
+   55 | void console(const char);
+      |              ^~~~~~~~~~
+../Core/Src/main.c:197:11: warning: passing argument 1 of 'console' makes integer from pointer without a cast [-Wint-conversion]
+  197 |   console("Ready.\r\n");
+      |           ^~~~~~~~~~~~
+      |           |
+      |           char *
+In file included from ../Core/Src/main.c:17:
+../Core/Inc/main.h:55:14: note: expected 'char' but argument is of type 'char *'
+   55 | void console(const char);
+      |              ^~~~~~~~~~
+../Core/Src/main.c:237:38: warning: format '%X' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  237 |       sprintf(msg, "ADC value = 0x%08X\r\n", adc_val);
+      |                                   ~~~^       ~~~~~~~
+      |                                      |       |
+      |                                      |       uint32_t {aka long unsigned int}
+      |                                      unsigned int
+      |                                   %08lX
+../Core/Src/main.c:276:19: warning: passing argument 1 of 'console' makes integer from pointer without a cast [-Wint-conversion]
+  276 |           console("PCM3168A is turned ON.\r\n");
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                   |
+      |                   char *
+In file included from ../Core/Src/main.c:17:
+../Core/Inc/main.h:55:14: note: expected 'char' but argument is of type 'char *'
+   55 | void console(const char);
+      |              ^~~~~~~~~~
+../Core/Src/main.c:284:19: warning: passing argument 1 of 'console' makes integer from pointer without a cast [-Wint-conversion]
+  284 |           console("PCM3168A is turned OFF.\r\n");
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                   |
+      |                   char *
+In file included from ../Core/Src/main.c:17:
+../Core/Inc/main.h:55:14: note: expected 'char' but argument is of type 'char *'
+   55 | void console(const char);
+      |              ^~~~~~~~~~
+../Core/Src/main.c:296:17: warning: passing argument 1 of 'console' makes integer from pointer without a cast [-Wint-conversion]
+  296 |         console("ADC/DAC current regmap:\r\n");
+      |                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                 |
+      |                 char *
+In file included from ../Core/Src/main.c:17:
+../Core/Inc/main.h:55:14: note: expected 'char' but argument is of type 'char *'
+   55 | void console(const char);
+      |              ^~~~~~~~~~
+../Core/Src/main.c:302:17: warning: passing argument 1 of 'console' makes integer from pointer without a cast [-Wint-conversion]
+  302 |         console("Done.\r\n");
+      |                 ^~~~~~~~~~~
+      |                 |
+      |                 char *
+In file included from ../Core/Src/main.c:17:
+../Core/Inc/main.h:55:14: note: expected 'char' but argument is of type 'char *'
+   55 | void console(const char);
+      |              ^~~~~~~~~~
+../Core/Src/main.c:317:17: warning: passing argument 1 of 'console' makes integer from pointer without a cast [-Wint-conversion]
+  317 |         console("Done.\r\n");
+      |                 ^~~~~~~~~~~
+      |                 |
+      |                 char *
+In file included from ../Core/Src/main.c:17:
+../Core/Inc/main.h:55:14: note: expected 'char' but argument is of type 'char *'
+   55 | void console(const char);
+      |              ^~~~~~~~~~
+../Core/Src/main.c:328:19: warning: passing argument 1 of 'console' makes integer from pointer without a cast [-Wint-conversion]
+  328 |           console("DMA data stream is ON.\r\n");
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                   |
+      |                   char *
+In file included from ../Core/Src/main.c:17:
+../Core/Inc/main.h:55:14: note: expected 'char' but argument is of type 'char *'
+   55 | void console(const char);
+      |              ^~~~~~~~~~
+../Core/Src/main.c:334:19: warning: passing argument 1 of 'console' makes integer from pointer without a cast [-Wint-conversion]
+  334 |           console("DMA data stream is OFF.\r\n");
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                   |
+      |                   char *
+In file included from ../Core/Src/main.c:17:
+../Core/Inc/main.h:55:14: note: expected 'char' but argument is of type 'char *'
+   55 | void console(const char);
+      |              ^~~~~~~~~~
+../Core/Src/main.c:341:17: warning: passing argument 1 of 'console' makes integer from pointer without a cast [-Wint-conversion]
+  341 |         console("Got that babe.\r\n");
+      |                 ^~~~~~~~~~~~~~~~~~~~
+      |                 |
+      |                 char *
+In file included from ../Core/Src/main.c:17:
+../Core/Inc/main.h:55:14: note: expected 'char' but argument is of type 'char *'
+   55 | void console(const char);
+      |              ^~~~~~~~~~
+../Core/Src/main.c:364:14: warning: unused variable 'tmp' [-Wunused-variable]
+  364 |         char tmp[64];
+      |              ^~~
+../Core/Src/main.c:363:17: warning: unused variable 'real_att' [-Wunused-variable]
+  363 |         uint8_t real_att;
+      |                 ^~~~~~~~
+../Core/Src/main.c:150:42: warning: unused variable 'osc_4' [-Wunused-variable]
+  150 |   oscillator osc_0, osc_1, osc_2, osc_3, osc_4;
+      |                                          ^~~~~
+../Core/Src/main.c: In function 'Error_Handler':
+../Core/Src/main.c:566:13: warning: passing argument 1 of 'console' makes integer from pointer without a cast [-Wint-conversion]
+  566 |     console("Shit happened.\r\n");
+      |             ^~~~~~~~~~~~~~~~~~~~
+      |             |
+      |             char *
+In file included from ../Core/Src/main.c:17:
+../Core/Inc/main.h:55:14: note: expected 'char' but argument is of type 'char *'
+   55 | void console(const char);
+      |              ^~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:611:6: error: conflicting types for 'console'
+  611 | void console(const char *msg)
+      |      ^~~~~~~
+In file included from ../Core/Src/main.c:17:
+../Core/Inc/main.h:55:6: note: previous declaration of 'console' was here
+   55 | void console(const char);
+      |      ^~~~~~~
+make: *** [Core/Src/subdir.mk:73: Core/Src/main.o] Error 1
+make: *** Waiting for unfinished jobs....
+"make -j12 all" terminated with exit code 2. Build might be incomplete.
+18:05:31 **** Incremental Build of configuration Debug for project genesys_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/adc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/adc.d" -MT"Core/Src/adc.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/adc.o"
+arm-none-eabi-gcc "../Core/Src/dma.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/dma.d" -MT"Core/Src/dma.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/dma.o"
+arm-none-eabi-gcc "../Core/Src/gpio.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/gpio.d" -MT"Core/Src/gpio.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/gpio.o"
+arm-none-eabi-gcc "../Core/Src/ltdc.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/ltdc.d" -MT"Core/Src/ltdc.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/ltdc.o"
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/pcm3168a.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/pcm3168a.d" -MT"Core/Src/pcm3168a.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/pcm3168a.o"
+arm-none-eabi-gcc "../Core/Src/quadspi.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/quadspi.d" -MT"Core/Src/quadspi.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/quadspi.o"
+arm-none-eabi-gcc "../Core/Src/sai.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/sai.d" -MT"Core/Src/sai.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/sai.o"
+arm-none-eabi-gcc "../Core/Src/spi.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/spi.d" -MT"Core/Src/spi.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/spi.o"
+arm-none-eabi-gcc "../Core/Src/stm32h7xx_hal_msp.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32h7xx_hal_msp.d" -MT"Core/Src/stm32h7xx_hal_msp.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_hal_msp.o"
+arm-none-eabi-gcc "../Core/Src/stm32h7xx_it.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/stm32h7xx_it.d" -MT"Core/Src/stm32h7xx_it.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/stm32h7xx_it.o"
+arm-none-eabi-gcc "../Core/Src/tim.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/tim.d" -MT"Core/Src/tim.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/tim.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:237:38: warning: format '%X' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  237 |       sprintf(msg, "ADC value = 0x%08X\r\n", adc_val);
+      |                                   ~~~^       ~~~~~~~
+      |                                      |       |
+      |                                      |       uint32_t {aka long unsigned int}
+      |                                      unsigned int
+      |                                   %08lX
+../Core/Src/main.c:364:14: warning: unused variable 'tmp' [-Wunused-variable]
+  364 |         char tmp[64];
+      |              ^~~
+../Core/Src/main.c:363:17: warning: unused variable 'real_att' [-Wunused-variable]
+  363 |         uint8_t real_att;
+      |                 ^~~~~~~~
+../Core/Src/main.c:150:42: warning: unused variable 'osc_4' [-Wunused-variable]
+  150 |   oscillator osc_0, osc_1, osc_2, osc_3, osc_4;
+      |                                          ^~~~~
+arm-none-eabi-gcc "../Core/Src/usart.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/usart.d" -MT"Core/Src/usart.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/usart.o"
+arm-none-eabi-gcc "../Core/Src/usb_otg.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/usb_otg.d" -MT"Core/Src/usb_otg.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/usb_otg.o"
+arm-none-eabi-gcc -o "genesys_core.elf" @"objects.list"   -mcpu=cortex-m7 -T"D:\recherche\projets\projet_genesys\dev\genesys_core\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="genesys_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: genesys_core.elf
+ 
+arm-none-eabi-size   genesys_core.elf 
+arm-none-eabi-objdump -h -S  genesys_core.elf  > "genesys_core.list"
+   text	   data	    bss	    dec	    hex	filename
+  74836	   1148	   4956	  80940	  13c2c	genesys_core.elf
+Finished building: default.size.stdout
+ 
+Finished building: genesys_core.list
+ 
+18:09:01 **** Incremental Build of configuration Debug for project genesys_core ****
+make -j12 all 
+arm-none-eabi-size   genesys_core.elf 
+   text	   data	    bss	    dec	    hex	filename
+  74836	   1148	   4956	  80940	  13c2c	genesys_core.elf
+Finished building: default.size.stdout
+ 
+23:52:54 **** Build of configuration Debug for project genesys_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:237:38: warning: format '%X' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  237 |       sprintf(msg, "ADC value = 0x%08X\r\n", adc_val);
+      |                                   ~~~^       ~~~~~~~
+      |                                      |       |
+      |                                      |       uint32_t {aka long unsigned int}
+      |                                      unsigned int
+      |                                   %08lX
+../Core/Src/main.c:364:14: warning: unused variable 'tmp' [-Wunused-variable]
+  364 |         char tmp[64];
+      |              ^~~
+../Core/Src/main.c:363:17: warning: unused variable 'real_att' [-Wunused-variable]
+  363 |         uint8_t real_att;
+      |                 ^~~~~~~~
+../Core/Src/main.c:150:42: warning: unused variable 'osc_4' [-Wunused-variable]
+  150 |   oscillator osc_0, osc_1, osc_2, osc_3, osc_4;
+      |                                          ^~~~~
+arm-none-eabi-gcc -o "genesys_core.elf" @"objects.list"   -mcpu=cortex-m7 -T"D:\recherche\projets\projet_genesys\dev\genesys_core\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="genesys_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: genesys_core.elf
+ 
+arm-none-eabi-size   genesys_core.elf 
+arm-none-eabi-objdump -h -S  genesys_core.elf  > "genesys_core.list"
+   text	   data	    bss	    dec	    hex	filename
+  74828	   1148	   4964	  80940	  13c2c	genesys_core.elf
+Finished building: default.size.stdout
+ 
+Finished building: genesys_core.list
+ 
+00:00:38 **** Incremental Build of configuration Debug for project genesys_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:237:38: warning: format '%X' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  237 |       sprintf(msg, "ADC value = 0x%08X\r\n", adc_val);
+      |                                   ~~~^       ~~~~~~~
+      |                                      |       |
+      |                                      |       uint32_t {aka long unsigned int}
+      |                                      unsigned int
+      |                                   %08lX
+../Core/Src/main.c:364:14: warning: unused variable 'tmp' [-Wunused-variable]
+  364 |         char tmp[64];
+      |              ^~~
+../Core/Src/main.c:363:17: warning: unused variable 'real_att' [-Wunused-variable]
+  363 |         uint8_t real_att;
+      |                 ^~~~~~~~
+../Core/Src/main.c:150:42: warning: unused variable 'osc_4' [-Wunused-variable]
+  150 |   oscillator osc_0, osc_1, osc_2, osc_3, osc_4;
+      |                                          ^~~~~
+arm-none-eabi-gcc -o "genesys_core.elf" @"objects.list"   -mcpu=cortex-m7 -T"D:\recherche\projets\projet_genesys\dev\genesys_core\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="genesys_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: genesys_core.elf
+ 
+arm-none-eabi-size   genesys_core.elf 
+arm-none-eabi-objdump -h -S  genesys_core.elf  > "genesys_core.list"
+   text	   data	    bss	    dec	    hex	filename
+  74828	   1148	   4964	  80940	  13c2c	genesys_core.elf
+Finished building: default.size.stdout
+ 
+Finished building: genesys_core.list
+ 
+00:09:32 **** Incremental Build of configuration Debug for project genesys_core ****
+make -j12 all 
+arm-none-eabi-size   genesys_core.elf 
+   text	   data	    bss	    dec	    hex	filename
+  74828	   1148	   4964	  80940	  13c2c	genesys_core.elf
+Finished building: default.size.stdout
+ 
+00:20:24 **** Incremental Build of configuration Debug for project genesys_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:237:38: warning: format '%X' expects argument of type 'unsigned int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  237 |       sprintf(msg, "ADC value = 0x%08X\r\n", adc_val);
+      |                                   ~~~^       ~~~~~~~
+      |                                      |       |
+      |                                      |       uint32_t {aka long unsigned int}
+      |                                      unsigned int
+      |                                   %08lX
+../Core/Src/main.c:364:14: warning: unused variable 'tmp' [-Wunused-variable]
+  364 |         char tmp[64];
+      |              ^~~
+../Core/Src/main.c:363:17: warning: unused variable 'real_att' [-Wunused-variable]
+  363 |         uint8_t real_att;
+      |                 ^~~~~~~~
+../Core/Src/main.c:150:42: warning: unused variable 'osc_4' [-Wunused-variable]
+  150 |   oscillator osc_0, osc_1, osc_2, osc_3, osc_4;
+      |                                          ^~~~~
+arm-none-eabi-gcc -o "genesys_core.elf" @"objects.list"   -mcpu=cortex-m7 -T"D:\recherche\projets\projet_genesys\dev\genesys_core\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="genesys_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: genesys_core.elf
+ 
+arm-none-eabi-size   genesys_core.elf 
+arm-none-eabi-objdump -h -S  genesys_core.elf  > "genesys_core.list"
+   text	   data	    bss	    dec	    hex	filename
+  74828	   1148	   4964	  80940	  13c2c	genesys_core.elf
+Finished building: default.size.stdout
+ 
+Finished building: genesys_core.list
+ 
+00:22:44 **** Incremental Build of configuration Debug for project genesys_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/tim.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/tim.d" -MT"Core/Src/tim.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/tim.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:237:31: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  237 |       sprintf(msg, "Channel #%d: 0x%08X\r\n", ADC_channel,adc_val);
+      |                              ~^               ~~~~~~~~~~~
+      |                               |               |
+      |                               int             uint32_t {aka long unsigned int}
+      |                              %ld
+../Core/Src/main.c:237:39: warning: format '%X' expects argument of type 'unsigned int', but argument 4 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  237 |       sprintf(msg, "Channel #%d: 0x%08X\r\n", ADC_channel,adc_val);
+      |                                    ~~~^                   ~~~~~~~
+      |                                       |                   |
+      |                                       unsigned int        uint32_t {aka long unsigned int}
+      |                                    %08lX
+../Core/Src/main.c:364:14: warning: unused variable 'tmp' [-Wunused-variable]
+  364 |         char tmp[64];
+      |              ^~~
+../Core/Src/main.c:363:17: warning: unused variable 'real_att' [-Wunused-variable]
+  363 |         uint8_t real_att;
+      |                 ^~~~~~~~
+../Core/Src/main.c:150:42: warning: unused variable 'osc_4' [-Wunused-variable]
+  150 |   oscillator osc_0, osc_1, osc_2, osc_3, osc_4;
+      |                                          ^~~~~
+arm-none-eabi-gcc -o "genesys_core.elf" @"objects.list"   -mcpu=cortex-m7 -T"D:\recherche\projets\projet_genesys\dev\genesys_core\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="genesys_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: genesys_core.elf
+ 
+arm-none-eabi-size   genesys_core.elf 
+arm-none-eabi-objdump -h -S  genesys_core.elf  > "genesys_core.list"
+   text	   data	    bss	    dec	    hex	filename
+  74828	   1148	   4964	  80940	  13c2c	genesys_core.elf
+Finished building: default.size.stdout
+ 
+Finished building: genesys_core.list
+ 

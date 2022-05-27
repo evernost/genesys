@@ -1,0 +1,40 @@
+00:22:44 **** Incremental Build of configuration Debug for project genesys_core ****
+make -j12 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc "../Core/Src/tim.c" -mcpu=cortex-m7 -std=gnu11 -g3 -DUSE_HAL_DRIVER -DSTM32H743xx -DDEBUG -c -I../Core/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc -I../Drivers/STM32H7xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32H7xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/tim.d" -MT"Core/Src/tim.o" --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -o "Core/Src/tim.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:237:31: warning: format '%d' expects argument of type 'int', but argument 3 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  237 |       sprintf(msg, "Channel #%d: 0x%08X\r\n", ADC_channel,adc_val);
+      |                              ~^               ~~~~~~~~~~~
+      |                               |               |
+      |                               int             uint32_t {aka long unsigned int}
+      |                              %ld
+../Core/Src/main.c:237:39: warning: format '%X' expects argument of type 'unsigned int', but argument 4 has type 'uint32_t' {aka 'long unsigned int'} [-Wformat=]
+  237 |       sprintf(msg, "Channel #%d: 0x%08X\r\n", ADC_channel,adc_val);
+      |                                    ~~~^                   ~~~~~~~
+      |                                       |                   |
+      |                                       unsigned int        uint32_t {aka long unsigned int}
+      |                                    %08lX
+../Core/Src/main.c:364:14: warning: unused variable 'tmp' [-Wunused-variable]
+  364 |         char tmp[64];
+      |              ^~~
+../Core/Src/main.c:363:17: warning: unused variable 'real_att' [-Wunused-variable]
+  363 |         uint8_t real_att;
+      |                 ^~~~~~~~
+../Core/Src/main.c:150:42: warning: unused variable 'osc_4' [-Wunused-variable]
+  150 |   oscillator osc_0, osc_1, osc_2, osc_3, osc_4;
+      |                                          ^~~~~
+arm-none-eabi-gcc -o "genesys_core.elf" @"objects.list"   -mcpu=cortex-m7 -T"D:\recherche\projets\projet_genesys\dev\genesys_core\STM32H743ZITX_FLASH.ld" --specs=nosys.specs -Wl,-Map="genesys_core.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv5-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: genesys_core.elf
+ 
+arm-none-eabi-size   genesys_core.elf 
+arm-none-eabi-objdump -h -S  genesys_core.elf  > "genesys_core.list"
+   text	   data	    bss	    dec	    hex	filename
+  74828	   1148	   4964	  80940	  13c2c	genesys_core.elf
+Finished building: default.size.stdout
+ 
+Finished building: genesys_core.list
+ 
+
+00:22:46 Build Finished. 0 errors, 5 warnings. (took 1s.900ms)
+

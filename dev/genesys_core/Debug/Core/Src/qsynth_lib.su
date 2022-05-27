@@ -1,0 +1,5 @@
+../Core/Src/qsynth_lib.c:24:6:osc_step	32	static
+../Core/Src/qsynth_lib.c:52:6:osc_reset_phase	16	static
+../Core/Src/qsynth_lib.c:61:6:adsr_init	16	static
+../Core/Src/qsynth_lib.c:72:6:adsr_step	16	static
+../Core/Src/qsynth_lib.c:336:7:adsr_time_to_ratio	48	static

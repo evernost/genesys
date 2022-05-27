@@ -1,0 +1,8 @@
+<b>Genesys board</b><br>
+This project is a versatile audio generator and processor. It features:<br>
+- an HyperPixel 4.0 Raspberry Pi screen,<br>
+- a STM32 microcontroller,<br>
+- a Flash memory for waveform and settings storage,<br>
+- many potentiometers for easy parameters adjustment.<br>
+<br>
+It handles stereo streams, MIDI and USB interface. USB interface is used both for computer control and hosting interface for keyboard/mouse to ease user interaction.

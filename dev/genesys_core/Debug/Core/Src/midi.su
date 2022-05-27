@@ -1,0 +1,4 @@
+../Core/Src/midi.c:31:6:midi_init	24	static
+../Core/Src/midi.c:53:6:midi_update	24	static
+../Core/Src/midi.c:191:6:midi_note_push	16	static
+../Core/Src/midi.c:219:17:midi_note_pop	24	static

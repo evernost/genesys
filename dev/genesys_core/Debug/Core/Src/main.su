@@ -1,0 +1,12 @@
+../Core/Src/main.c:94:6:HAL_SAI_TxHalfCpltCallback	16	static
+../Core/Src/main.c:102:6:HAL_SAI_TxCpltCallback	16	static
+../Core/Src/main.c:112:6:HAL_SAI_RxCpltCallback	16	static,ignoring_inline_asm
+../Core/Src/main.c:117:6:HAL_SAI_RxHalfCpltCallback	16	static,ignoring_inline_asm
+../Core/Src/main.c:136:5:main	496	static
+../Core/Src/main.c:457:6:SystemClock_Config	120	static
+../Core/Src/main.c:517:6:PeriphCommonClock_Config	200	static
+../Core/Src/main.c:559:6:Error_Handler	8	static,ignoring_inline_asm
+../Core/Src/main.c:591:6:HAL_UART_RxCpltCallback	16	static
+../Core/Src/main.c:611:6:console	80	static
+../Core/Src/main.c:618:6:HAL_TIM_PeriodElapsedCallback	16	static
+../Core/Src/main.c:626:6:HAL_ADC_ConvCpltCallback	16	static
